@@ -1,0 +1,388 @@
+﻿/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	background: #122B3A;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	
+	}
+canvas{
+	display: block;
+	width:100%;
+	position:fixed;
+	left:0;
+	right:0;
+	z-index:-1;
+}
+.center{
+	max-width:1366px;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+.h30{
+	height:30px;
+	width:100%;
+	clear:both;
+}
+.h10{
+	height:10px;
+	clear:both;
+}
+.h20{
+	height:20px;
+	clear:both;
+}
+
+.h40{
+	height:40px;
+	width:100%;
+	clear:both;
+}
+
+.h50{
+	height:50px;
+	width:100%;
+	clear:both;
+}
+.h60{
+	height:60px;
+	width:100%;
+	clear:both;
+}
+
+.lightup{
+text-align:center;
+}
+.lightup img{
+	width:100%;
+	max-width:733px;
+	max-height:197px;
+	cursor:pointer;
+}
+.x-mas-buid{
+	text-align:center;
+}
+.x-mas-buid img{
+	width:100%;
+	max-height:333px;
+}
+.x-mas-food-container{
+	width:100%;
+	}
+.x-mas-logo{
+	width:100%;
+	max-width:376px;
+}
+.x-mas-logo img{
+	width:100%;
+	max-width:376px;
+	cursor:pointer;
+
+}
+.x-mas-header{
+	width:100%;
+	height:70px;
+	background:#F2663C;
+}
+.x-mas-center-text{
+	font-size:36px;
+	color:#fff;
+	text-align:center;
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+}
+.x-mas-middle-box{
+	width:100%;
+	max-width:1160px;
+	margin:0 auto;
+	position:relative;
+}
+
+.x-mas-middle-box img{
+	width:100%;
+}
+.x-max-share-facebook-box{
+	width:58%;
+	border-radius:10px;
+	text-align:center;
+	background:#fff;
+	padding-top:35px;
+	margin:0 auto;
+	margin-top:-72px!important;
+	position:relative;
+	
+}
+.x-max-share-facebook-box img{
+	width:30%;
+}
+.x-mas-prize{
+	position:absolute;
+	width:100%;
+	left:0x;
+	text-align:center;
+	top:105px;
+	right:0;
+	bottom:0;
+	
+}
+.archieved-img{
+	width:100%;
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	z-index: 999;
+}
+.facebook-button-fb{
+	max-width:100%;
+	text-align:center;
+}
+.facebook-button-fb img{
+		max-width:263px;
+
+}
+.x-mas-facebook-fb{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	top:207px;
+}
+.x-mas-facebook-fb img{
+	width:32%
+}
+.inreract img{
+	width:2%;
+	vertical-align:bottom;
+	margin-left:1%;
+}
+
+.spreadjoy{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	font-size:20px;
+	width:100%;
+	pointer-events: none;
+}
+.spreadjoy img{
+	width: 9%;
+margin-left: 25%;
+margin-top: 5%;
+}
+.facebook-share img{
+	width:15%;
+}
+
+.comment_day1{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+.comment_day1 div{
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	font-size: 29px;
+	margin-top: 17%;
+	display: inline-block;
+	width: 20%;
+}
+.voucher_day1{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.voucher_day1 div{
+-ms-transform: rotate(13deg); /* IE 9 */
+-webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+transform: rotate(13deg);
+margin-top: 26.5%;
+margin-left: -3%;
+font-size:31px;
+color:#fff;
+}
+
+.comment_day3{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+.comment_day3 div{
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	font-size: 33px;
+	margin-top: 14%;
+	color:#414042;
+
+}
+
+.voucher_day3{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.voucher_day3 div{
+-ms-transform: rotate(13deg); /* IE 9 */
+-webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+transform: rotate(13deg);
+margin-top: 25%;
+margin-left: 30%;
+font-size: 16px;
+color: #034735;
+text-align:left;
+font-weight:bold;
+display: inline-block;
+width: 18%;}
+
+.comment_day4{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+.comment_day4 div{
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+	font-size: 18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-top: 14%;
+	color:#333333;
+	text-align:left;
+display: inline-block;
+line-height:24px;
+width: 18%;
+
+}
+.voucher_day6{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.voucher_day6 div{
+-ms-transform: rotate(-7deg); /* IE 9 */
+-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+transform: rotate(-7deg);
+margin-top: 35%;
+margin-left: 11%;
+font-size: 25px;
+color: #fff;
+text-align: left;
+display: inline-block;}
+
+.voucher_day11{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.voucher_day11 div{
+-ms-transform: rotate(-7deg); /* IE 9 */
+-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+transform: rotate(-7deg);
+margin-top: 28%;
+margin-left: 6%;
+font-size: 44px;
+color: #fff;
+letter-spacing: 3px;}
+
+.comment_day2{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+.comment_day2 div{
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	font-size: 33px;
+margin-top: 13%;
+color: #414042;
+margin-left: -5%;
+display: inline-block;
+width: 18%;
+}
+
+.voucher_day2{
+position:absolute;
+text-align:center;
+width:100%;
+top:0px;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.voucher_day2 div{
+-ms-transform: rotate(13deg); /* IE 9 */
+-webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+transform: rotate(13deg);
+margin-top: 21%;
+margin-left: 13%;
+font-size: 14px;
+color: #034735;
+text-align: left;
+display: inline-block;
+letter-spacing: 1px;
+display: inline-block;
+width: 18%;
+}
+
+
+@media only screen and (max-width:768px){
+.spreadjoy img {
+width: 9%;
+margin-left: 25%;
+margin-top: 8%;
+}
+}

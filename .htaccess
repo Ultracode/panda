@@ -1,0 +1,18 @@
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteEngine On
+
+# Test .htaccess stuff.
+#RewriteRule ^csr/                           /csr/index.php [L]
+RewriteRule ^csr/images/(.*)?$              /csr/images/$1 [L]
+RewriteRule ^assets/js/(.*)?$               /js/$1 [L]
+RewriteRule ^user/login?$                   /csr/login.php [L]
+RewriteRule ^user/donate?$                  /csr/donate.php [L]
+RewriteRule ^user/loggedIn?$                /csr/checklogin.php [L]
+RewriteRule ^user/donation-count?$          /csr/donatecount.php [L]
+
+RewriteRule ^offers/day/(.*)$               /daily/pagemaker.php?page=$1 [L]
+#RewriteRule ^daily/css/(.*)$                /daily/css/$1 [L]
+#RewriteRule ^daily/images/(.*)?$            /daily/images/$1 [L]

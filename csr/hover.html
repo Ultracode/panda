@@ -1,0 +1,35 @@
+<div class="x-mas-onover-food">
+    <div class="food-product">
+    <div class="donation-food-name"><?php echo $name; ?> donations</div>
+    <div class="h20"><!--clear--></div>
+    <?php 
+    echo '<div class="donation-food-image"><img src="/csr/images/'.$url[0].'"/></div>';
+    ?>
+    <div class="h30"><!--clear--></div>
+    <div class="donation-food-quantity"><?php echo $count[0]; ?> donated so far</div>
+        <div class="h30"><!--clear--></div>
+
+    </div>
+    <div class="customer-massage">
+    <div class="customer-review">User message</div>
+    <div class="h10"><!--clear--></div>
+    <?php
+    foreach($messages as $message) {
+        echo '<div class="user-masseges">'.$message.'</div>';
+    }
+/*        <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+    
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+    <div class="user-masseges">Evana: enjoy the food and merry x-mas</div>
+*/
+    ?>
+
+    
+    </div>
+</div>

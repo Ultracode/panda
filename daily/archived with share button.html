@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Foodpanda</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<canvas id="canvas">
+
+
+</canvas>
+
+<div class="x-mas-food-container">
+	<!--header-->
+	
+	<div class="x-mas-header">
+		<div class="x-mas-logo">
+			<img src="images/Logo_png_01.png"></div>
+	</div>
+	
+	<!--end header-->
+		<div class="h50"><!--clearence--></div>
+
+	<!--lightup-->
+			<div class="lightup">
+				<img src="images/calendar_old_export_03.png">
+				
+			</div>
+					
+			<div class="x-mas-center-text" ><span style="font-size:20px;">Thanks for participating!</span><div class="h10"></div>
+				<span style="font-size:26px;">Today‘s gift:</span><br/>	<span style="font-size:32px;">Trip to:</span>  <div style="text-align:center; margin-top:10px;"><img src="images/Red_hat_03.png"></div>
+				<span style="font-size:16px;">Come back tomorrow to see the next gift!</span>
+			</div>
+			
+		<!--box-->
+		
+			<div class="x-mas-middle-box"><img src="images/day-1.png">
+			<div class="archieved-img"><img src="images/Archieved_03.png"></div>
+			</div>
+		<!--end box--->		
+			<div class="x-max-share-facebook-box">
+						<div class="facebook-share"><a href=""><img src="images/F_share_03.jpg"></a></div>
+
+			<div class="spreadjoy"><img src="images/Untitled-1_03.jpg"></div>
+					<div class="h50"><!--clearence--></div>
+
+			</div>
+</div>
+<script>
+window.onload = function(){
+	//canvas init
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	//canvas dimensions
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H;
+	
+	//snowflake particles
+	var mp = 70; //max particles
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random()*W, //x-coordinate
+			y: Math.random()*H, //y-coordinate
+			r: Math.random()*4+1, //radius
+			d: Math.random()*mp //density
+		})
+	}
+	
+	//Lets draw the flakes
+	function draw()
+	{
+		ctx.clearRect(0, 0, W, H);
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+		update();
+	}
+	
+	//Function to move the snowflakes
+	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+	var angle = 0;
+	function update()
+	{
+		angle += 0.01;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			//Updating X and Y coordinates
+			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+			//Every particle has its own density which can be used to make the downward movement different for each flake
+			//Lets make it more random by adding in the radius
+			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+			p.x += Math.sin(angle) * 2;
+			
+			//Sending flakes back from the top when it exits
+			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			if(p.x > W+5 || p.x < -5 || p.y > H)
+			{
+				if(i%3 > 0) //66.67% of the flakes
+				{
+					particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+				}
+				else
+				{
+					//If the flake is exitting from the right
+					if(Math.sin(angle) > 0)
+					{
+						//Enter from the left
+						particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+					else
+					{
+						//Enter from the right
+						particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+				}
+			}
+		}
+	}
+	
+	//animation loop
+	setInterval(draw, 45);
+}
+
+
+</script>
+
+
+</body>
+
+</html>

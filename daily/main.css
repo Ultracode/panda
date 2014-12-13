@@ -1,0 +1,139 @@
+﻿/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	background: #122B3A;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	
+	}
+canvas{
+	display: block;
+	width:100%;
+	position:fixed;
+	left:0;
+	right:0;
+	z-index:-1;
+	max-height:200%;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+.h30{
+	height:30px;
+	width:100%;
+	clear:both;
+}
+.h10{
+	height:10px;
+	clear:both;
+}
+.h20{
+	height:20px;
+	clear:both;
+}
+
+.h40{
+	height:40px;
+	width:100%;
+	clear:both;
+}
+
+.h50{
+	height:50px;
+	width:100%;
+	clear:both;
+}
+.h60{
+	height:50px;
+	width:100%;
+	clear:both;
+}
+
+.lightup{
+text-align:center;
+}
+.lightup img{
+	width:100%;
+	max-width:733px;
+	max-height:197px;
+	cursor:pointer;
+}
+.x-mas-buid{
+	text-align:center;
+}
+.x-mas-buid img{
+	width:100%;
+	max-height:333px;
+}
+.x-mas-food-container{
+	width:100%;
+	}
+.x-mas-logo{
+	width:100%;
+	max-width:376px;
+}
+.x-mas-logo img{
+	width:100%;
+	max-width:376px;
+	cursor:pointer;
+
+}
+.x-mas-header{
+	width:100%;
+	height:70px;
+	background:#F2663C;
+}
+.x-mas-center-text{
+	font-size:36px;
+	color:#fff;
+	text-align:center;
+	width:100%;
+	max-width:1200px;
+	margin:0 auto;
+}
+x-mas-middle-box{
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+	text-align:center;
+	display:block;
+}
+.x-mas-day-box{
+	width:100%;
+	max-width:950px;
+	margin:0 auto;
+}
+.day-block img{
+	float:left;
+	width:16%;
+}
+.icon-block img{
+	float:left;
+	width:10%;
+
+
+}
+.x-max-close-day-footer{
+	width:100%;
+	text-align:center;
+	background:#FFEFDB;
+	margin-top:-4px;
+}
+.block-box{
+width:100%;
+text-align:center;
+}
+
+.block-box img{
+	width:100%;
+	max-width:517px;
+}
+.open {
+	opacity: 0.5;
+}
+

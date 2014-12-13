@@ -1,0 +1,616 @@
+﻿/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	/*You can use any kind of background here.*/
+	background: #122B3A;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	
+	}
+canvas{
+	display: block;
+	width:100%;
+	position:absolute;
+	left:0;
+	right:0;
+	z-index:-1;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+.h30{
+	height:30px;
+	width:100%;
+	clear:both;
+}
+.h10{
+	height:10px;
+	clear:both;
+}
+.h20{
+	height:20px;
+	clear:both;
+}
+
+.h40{
+	height:40px;
+	width:100%;
+	clear:both;
+}
+
+.h50{
+	height:50px;
+	width:100%;
+	clear:both;
+}
+.lightup{
+text-align:center;
+}
+.lightup img{
+	width:100%;
+	max-width:723px;
+	max-height:197px;
+}
+.x-mas-buid{
+	text-align:center;
+}
+.x-mas-buid img{
+	width:100%;
+	max-height:333px;
+}
+.x-mas-food-container{
+	width:100%;
+	}
+.x-mas-logo{
+	width:100%;
+	max-width:376px;
+}
+.x-mas-logo img{
+	width:100%;
+	max-width:376px;
+
+}
+.x-mas-header{
+	width:100%;
+	height:70px;
+	background:#F2663C;
+}
+.x-mas-strip{
+	width:100%;
+	text-align:center;
+	font-size:26px;
+	padding:20px 0;
+	margin-top:-5px;
+	background:#EDEDEE;
+	cursor:pointer;
+	
+}
+.x-mas-other{
+	width:100%;
+	text-align:center;
+	font-size:26px;
+	padding:30px 0;
+	background:#fff;
+	cursor:pointer;	
+	clear:both;
+}
+
+.arrow-sec{
+	cursor:pointer;
+}
+.x-mas-body-contianer{
+	height:100%;
+	width:100%;
+	position:relative;
+	background:transparent;
+
+   }
+.x-mas-body-back{
+	width:100%;
+	text-align:center;
+	max-height:390px;
+}
+.x-mas-body-back img{
+	width:100%;
+	text-align:center;
+	max-height:390px;
+
+}
+.x-mas-maine-banner{
+	width:100%;
+	max-width:1366px;
+	max-height:534px;
+	z-index:auto;
+}
+.x-mas-maine-banner img{
+	width:100%;
+	max-width:1366px;
+	max-height:534px;
+
+}
+.x-mas-body-section-over img{
+	position:absolute;
+	left:0px;
+	top:-4px;
+	width:100%;
+	float:left;
+	z-index:1;
+}
+.x-mas-donation{
+	width:100%;
+	font-size:26px;
+	float:left;
+	padding:30px 0px;
+	background:#F6F6F6;
+	cursor:pointer;
+	display: inline-flex;
+}
+.food-donation{
+	width:49%;
+	float:left;
+	border-right:1px solid #ccc;
+	padding-top:1%;
+	padding-left:1%;
+	background:#F6F6F6;
+	font-size:24px;
+}
+.toy-donation{
+	width:48%;
+	background:#F6F6F6!important;
+	float:right;
+	padding-top:1%;
+	padding-left:1%;
+
+	font-size:24px;
+	
+}
+.food-donation-header
+{
+	font-size:24px;
+	color:#414042;
+	margin-left:1.5%;
+}
+.submit-header{
+	font-size:18px;
+	margin-left:1.5%;
+	color:#414042;
+}
+.x-box-block{
+		border-radius:5px;
+		border:1px solid #ccc;
+		width:105px;
+		height:100px;
+		float:left;
+		margin-left:10px;
+		margin-right: 10px;
+		background:#fff;
+		margin-top:10px;
+		position:relative;
+}
+.x-box-block img {
+    border-radius:5px;
+
+}
+
+.x-box-block a{
+    opacity: 0;
+    position: absolute;
+    border-radius:5px;
+    bottom:0px;
+    text-transform: capitalize;
+    width:105px;
+    height:100px;
+    border:1px solid #d14a2f;
+    line-height: 88px;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #d4644d;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+
+
+    }
+.x-box-block a:hover{
+    opacity: 0.8;
+    bottom:0px;
+    width:105px;
+    height:100px;
+    left: 0px;
+    line-height: 88px;
+    right: 0px;
+    color: #ffffff;
+    border:1px solid #d14a2f;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #d4644d;
+        filter: Alpha(opacity=50); /* IE8 and earlier */
+
+}
+    
+.x-box-block a:active{
+    opacity: 0.8;
+    bottom:0px;
+    width:105px;
+    height:100px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    border:1px solid #d14a2f;
+    text-decoration: none;
+    line-height: 88px;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #d4644d;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+
+.x-box-block a.selected{
+    opacity: 0.8 !important;
+    bottom:0px;
+    width:105px;
+    height:100px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    border:1px solid #d14a2f;
+    text-decoration: none;
+    line-height: 88px;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #d4644d;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+
+.x-box-block-toy img {
+    border-radius:5px;
+}
+.x-box-block-toy a {
+    opacity: 0;
+    position: absolute;
+    border-radius:5px;
+    bottom:0px;
+    width:105px;
+	height:100px;
+    text-transform: capitalize;
+	border:1px solid #1e56a5;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 88px;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #336cbc;
+     filter: Alpha(opacity=50); /* IE8 and earlier */
+
+
+}
+
+.x-box-block-toy a:hover{
+    opacity: 0.8;
+    bottom:0px;
+    width:105px;
+	height:100px;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    border:1px solid #1e56a5;
+    line-height: 88px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #336cbc;
+        filter: Alpha(opacity=50); /* IE8 and earlier */
+
+    }
+
+.x-box-block-toy a:active{
+    opacity: 0.8;
+    bottom:0px;
+    width:105px;
+	height:100px;
+    left: 0px;
+    right: 0px;
+    line-height: 88px;
+    color: #ffffff;
+    border:1px solid #1e56a5;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #336cbc;
+        filter: Alpha(opacity=50); /* IE8 and earlier */
+
+
+}
+
+.x-box-block-toy a.selected{
+    opacity: 0.8 !important;
+    bottom:0px;
+    width:105px;
+    height:100px;
+    left: 0px;
+    right: 0px;
+    line-height: 88px;
+    color: #ffffff;
+    border:1px solid #1e56a5;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    background-color: #336cbc;
+        filter: Alpha(opacity=50); /* IE8 and earlier */
+
+
+}
+.x-box-block-toy{
+		border-radius:5px;
+		border:1px solid #ccc;
+		width:105px;
+		height:100px;
+		float:left;
+		margin-left:7.5px;
+		margin-right: 7.5px;
+		background:#fff;
+		margin-top:10px;
+		position:relative;
+}
+ .food-table{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+}
+.gift-pack{
+	position:absolute;
+	top:0px;
+	width:100%;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+}
+.gift-pack-sec{
+	position:absolute;
+	top:0px;
+	width:100%;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+}
+.gift-pack-sec img{
+	float: right;
+width: 8%;
+margin-top: 23%;
+margin-right: 17%;
+
+}
+.gift-pack img{
+	float:right;
+	width:17%;
+	margin-top:30%;
+	margin-right:2%;
+}
+.boy-hand{
+	position:absolute;
+	top:0px;
+	width:100%;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+
+}
+.girl-hand{
+	position:absolute;
+	top:0px;
+	width:100%;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+
+}
+.girl-hand img{
+	float:right;
+	width:3%;
+	margin-top:36%;
+	margin-right:6.7%;
+
+}
+.boy-hand img{
+	float:right;
+	margin-top: 24.5%;
+width: 7%;
+margin-right: 15.8%;
+}
+.food-table img{
+	width: 28.5%;
+	bottom: 0px;
+	margin-top: 25.6%;
+	margin-left: 9.9%;
+}
+.food-pot{
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0;
+	right:0px;
+	z-index:2;
+	margin-top:26%;
+	margin-left:12%;
+
+}
+.food-pot img{
+width:4.5%;
+}
+
+.x-mas-form{
+	margin-left:2%;
+}
+
+.x-mas-input{
+	width:84%;
+	border-radius:5px;
+	padding:18px;
+	outline:none;
+	border:1px solid #ccc;
+}
+.x-mas-texarea{
+	width:84%;
+	border-radius:5px;
+	padding:18px;
+	outline:none;
+	border:1px solid #ccc;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	resize: none;
+	height:100px !important;
+}
+.submit-button{
+	width:80%;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+	background:#009444;
+	padding:15px;
+	outline:none;
+	border:1px solid #58595B;
+	font-size:19px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+
+}
+.share-button{
+	width:80%;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+	background:#fff;
+	padding:15px;
+	outline:none;
+	text-align:center;
+	border:1px solid #58595B;
+	font-size:19px;
+	font-weight:bold;
+	color:#000;
+	cursor:pointer;
+
+
+}
+
+.x-mas-form{
+	width:100%;
+}
+.x-mas-left-box{
+	float:left;
+	width:100%;
+	max-width:300px;
+	margin-top: 2%;
+}
+.x-mas-right-box{
+	float:left;
+	width:100%;
+	max-width:300px;
+	margin-top: 2%;
+
+}
+.x-mas-onover-food{
+    border-radius:7px;
+    /*border:1px solid #ccc;*/
+    width:100%;
+    height:100%;
+    display:inline-block;
+    padding:1%;
+    max-width:400px;
+        font-family: 'Open Sans', sans-serif;
+
+}
+.food-product{
+    float:left;
+    width:40%;
+    border-right:1px solid #ccc;
+    
+}
+.customer-massage{
+    width:50%;
+    float:right;
+    padding:0 10px 0 10px;
+    overflow-y: scroll;
+    height:160px;
+
+}
+.h20{
+    height:20px;
+    clear:both;
+}
+.h30{
+    height:30px;
+    clear:both;
+}
+
+.donation-food-image{
+    text-align:center;
+    width:50px;
+    height:50px;
+}
+.donation-food-name{
+    text-align:left;
+    font-size:17px;
+    color:#3a3a3c;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.customer-review{
+    text-align:left;
+    font-size:17px;
+    color:#3a3a3c;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.donation-food-quantity{
+    text-align:left;
+    font-size:12px;
+    color:#3a3a3c;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+.user-masseges{
+    background:#e7e8e9;
+    padding:7px;
+    border-radius:5px;
+    font-size:9px;
+    margin-top:10px;
+}
